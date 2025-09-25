@@ -1,18 +1,21 @@
 public class Calculator {
     public double add(double a, double b) {
 
-        return 0;
+        return a + b;
     }
     public double sub(double a, double b) {
 
-        return 0;
+        return a - b;
     }
     public double mul(double a, double b) {
 
-        return 0;
+        return a * b;
     }
     public double div(double a, double b) {
-
-        return 0;
+        if (b == 0) {
+            throw new ArithmeticException("Division par zéro interdite");
+        }
+        return a / b;
     }
+
 }
